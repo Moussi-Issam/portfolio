@@ -94,36 +94,42 @@
     margin-bottom: 5px;
   }
   
-  #formation {
+  #competences, #formation, #objectif {
     text-align: center;
-    margin: 40px 0;
-    margin: 150px;
-  }
-
-  #formation, #objectif {
-    text-align: center;
-    margin: 60px auto;
-    max-width: 800px;
+    padding: 60px 20px;
     color: white;
+    max-width: 900px;
+    margin: auto;
   }
   
-  #formation h3, #objectif h3 {
-    font-size: 28px;
+  .skills {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 0;
+    list-style: none;
+    margin-top: 20px;
+  }
+  
+  .skills li {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 12px 24px;
+    border-radius: 20px;
     font-weight: bold;
-    margin-bottom: 15px;
+    transition: transform 0.3s;
   }
   
-  #formation ul li {
+  .skills li:hover {
+    transform: scale(1.1);
+  }
+  
+  .formation-list {
+    list-style: none;
+    padding: 0;
     font-size: 18px;
-    margin-bottom: 8px;
+    line-height: 1.6;
   }
   
-  #objectif {
-    text-align: center;
-    font-size: 1.2rem;
-    font-weight: bold;
-    margin: 40px 0 80px ;
-  }
   #contact {
     background-color: rgba(255, 255, 255, 0.05);
     padding: 40px;
