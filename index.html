@@ -5,17 +5,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portfolio - Issam</title>
   <link rel="stylesheet" href="style.css">
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 
 </head>
 <body>
   <header>
     <nav>
       <ul>
-        <a href="#accueil">Accueil</a>
-        <a href="#a-propos">À propos</a>
-        <a href="#competences">Mes compétences</a>
-        <a href="#formation">Mes Formation</a>
+        <li><a href="#accueil">Accueil</a></li>
+        <li><a href="#a-propos">À propos</a></li>
+        <li><a href="#competences">Mes compétences</a></li>
+        <li><a href="#formation">Mes Formation</a></li>
       </ul>
     </nav>
   </header>
@@ -24,11 +24,13 @@
     <section id="accueil" class="intro">
       <div class="intro-text">
         <h2>Bonjour, je m'appelle</h2>
-        <h1>ISSAM MOUSSI</h1>
+        <h1 class="animate__animated animate__bounce animate__delay-1s">ISSAM MOUSSI</h1>
       </div>
       <div class="intro-photo">
-        <img src="./img/id.png" alt="Photo d'Issam">
-        <p>Étudiant en informatique.</p>
+        <img src="./img/id.png" alt="Photo d'Issam" class="animate__animated animate__zoomIn animate__delay-2s">
+        <p class="animate__animated animate__fadeInUp animate__delay-1s">
+          Étudiant en informatique.
+        </p>
       </div>
     </section>
 
@@ -68,14 +70,6 @@
       <p>Devenir développeur.</p>
     </section>
 
-    <div data-aos="fade-up">
-      Je monte en fondu 😎
-    </div>
-    
-    <div data-aos="zoom-in" data-aos-delay="200">
-      Je grossis avec un délai
-    </div>
-    
     </main>
 
   <footer>
