@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portfolio - Issam</title>
   <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css"/>
 
 </head>
 <body>
@@ -22,16 +22,17 @@
 
   <main>
     <section id="accueil" class="intro">
-      <div class="intro-text" class="animate__animated animate__zoomIn animate__delay-2s">
+      <div class="intro-text">
         <h2>Bonjour, je m'appelle</h2>
         <h1 class="animate__animated animate__bounce animate__delay-2s">ISSAM MOUSSI</h1>
       </div>
       <div class="intro-photo">
-        <img src="./img/id.png" alt="Photo d'Issam">
-        <p class="animate__animated animate__fadeInUp animate__delay-1s">
+        <img src="./img/id.png" alt="Photo d'Issam" data-aos="zoom-in" data-aos-delay="200">
+        <p data-aos="fade-up" data-aos-delay="300">
           Étudiant en informatique.
         </p>
       </div>
+      
     </section>
 
     <section id="a-propos" data-aos="fade-right">
@@ -65,7 +66,7 @@
       </ul>
     </section>
 
-    <section id="objectif" class="animate__animated animate__fadeInUp animate__delay-2s" data-aos="fade-up" data-aos-duration="1000">
+    <section id="objectif" class="animate__animated animate__fadeInUp animate__delay-2s" data-aos="zoom-in" data-aos-delay="300">
       <h3>Mon objectif</h3>
       <p>Devenir développeur.</p>
     </section>
@@ -77,9 +78,12 @@
   </footer>
 
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<script>
-  AOS.init();
-</script>
+  <script>
+    AOS.init({
+      duration: 1000,
+      once: true
+    });
+  </script>  
 
 </body>
 </html>
