@@ -1,179 +1,157 @@
-/* Reset de base */
+/* RESET */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  body {
-    font-family: 'Georgia', serif;
-    background: radial-gradient(circle at top left, #3a1c5d, #1a0826);
-    color: #fff;
-    line-height: 1.6;
-    padding: 20px;
-  }
-  
-  nav ul {
-    display: flex;
-    justify-content: center;
-    list-style: none;
-    padding: 20px 0;
-    gap: 40px;
-    border-bottom: 1px solid #999;
-  }
-  
-  nav a {
-    color: #fff;
-    text-decoration: none;
-    font-weight: bold;
-  }
-  
-  .intro {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 40px 0 20px;
-    flex-wrap: wrap;
-    gap: 20px;
-    
-  }
-  
-  .intro-text h2 {
-    font-size: 1.5rem;
-    margin-bottom: 10px;
-  }
-  
-  .intro-text h1 {
-    font-size: 2.5rem;
-    font-weight: bold;
-  }
-  
-  .intro-photo {
-    text-align: center;
-  }
-  
-  .intro-photo img {
-    width: 180px;
-    height: auto;
-    border-radius: 10px;
-  }
-  
-  #a-propos {
-    text-align: center;
-    margin: 40px auto;
-    max-width: 800px;
-    margin-top: 150px;
-  }
-  
-  .italic {
-    font-style: italic;
-    margin-top: 15px;
-  }
-  
-  .grid {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    margin: 40px 0;
-    gap: 30px;
-    margin: 150px;
-  }
-  
-  .grid div {
-    width: 250px;
-  }
-  
-  h3 {
-    margin-bottom: 15px;
-    text-align: center;
-  }
-  
-  ul li {
-    list-style-type: disc;
-    margin-left: 20px;
-    margin-bottom: 5px;
-  }
-  
-  #competences, #formation, #objectif {
-    text-align: center;
-    padding: 40px 20px;
-    color: white;
-    max-width: 100px;
-    margin: auto;
-  }
-  
-  .skills {
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-    padding: 0;
-    list-style: none;
-    margin-top: 20px;
-  }
-  
-  .skills li {
-    background-color: rgba(255, 255, 255, 0.1);
-    padding: 12px 24px;
-    border-radius: 20px;
-    font-weight: bold;
-    transition: transform 0.3s;
-  }
-  
-  .skills li:hover {
-    transform: scale(1.1);
-  }
-  
-  .formation-list {
-    list-style: none;
-    padding: 0;
-    font-size: 18px;
-    line-height: 1.6;
-  }
-  
-  #contact {
-    background-color: rgba(255, 255, 255, 0.05);
-    padding: 40px;
-    max-width: 600px;
-    margin: 0 auto 60px;
-    border-radius: 8px;
-  }
-  
-  #contact h3 {
-    margin-bottom: 20px;
-    text-align: center;
-  }
-  
-  form {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-  }
-  
-  input, textarea {
-    padding: 10px;
-    border: none;
-    border-radius: 5px;
-    font-family: inherit;
-  }
-  
-  input[type="submit"] {
-    background-color: #6a2ca4;
-    color: white;
-    cursor: pointer;
-    font-weight: bold;
-    transition: background 0.3s;
-  }
-  
-  input[type="submit"]:hover {
-    background-color: #8543c0;
-  }
-  
-  
-  footer {
-    text-align: center;
-    font-size: 0.8rem;
-    padding: 20px;
-    border-top: 1px solid #999;
-    color: #aaa;
-  }
-  
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* BASE */
+body {
+  font-family: 'Georgia', serif;
+  background: radial-gradient(circle at top left, #3a1c5d, #1a0826);
+  color: #fff;
+  line-height: 1.6;
+  padding: 0 20px;
+}
+
+section {
+  max-width: 900px;
+  margin: 80px auto;
+  text-align: center;
+}
+
+/* NAVBAR */
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  gap: 40px;
+  padding: 20px 0;
+  border-bottom: 1px solid #999;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* INTRO */
+.intro {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  margin-top: 60px;
+}
+
+.intro-text h2 {
+  font-size: 1.5rem;
+}
+
+.intro-text h1 {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.intro-photo img {
+  width: 180px;
+  height: auto;
+  border-radius: 10px;
+}
+
+/* A PROPOS */
+.italic {
+  font-style: italic;
+  margin-top: 15px;
+}
+
+/* COMPÉTENCES */
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 60px;
+}
+
+.grid div {
+  width: 250px;
+}
+
+.skills {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  list-style: none;
+  margin-top: 20px;
+  padding: 0;
+}
+
+.skills li {
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 12px 24px;
+  border-radius: 20px;
+  font-weight: bold;
+  transition: transform 0.3s;
+}
+
+.skills li:hover {
+  transform: scale(1.1);
+}
+
+/* FORMATION / OBJECTIF */
+ul {
+  padding-left: 0;
+  list-style: none;
+}
+
+ul li {
+  margin-bottom: 10px;
+  line-height: 1.5;
+}
+
+/* CONTACT */
+#contact {
+  background-color: rgba(255, 255, 255, 0.05);
+  padding: 40px;
+  border-radius: 8px;
+  max-width: 600px;
+  margin: 60px auto;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+input, textarea {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  font-family: inherit;
+}
+
+input[type="submit"] {
+  background-color: #6a2ca4;
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+input[type="submit"]:hover {
+  background-color: #8543c0;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  font-size: 0.8rem;
+  padding: 20px;
+  border-top: 1px solid #999;
+  color: #aaa;
+}
