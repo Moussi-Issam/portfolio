@@ -1,32 +1,23 @@
-/* RESET */
+/* Reset de base */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* BASE */
 body {
   font-family: 'Georgia', serif;
   background: radial-gradient(circle at top left, #3a1c5d, #1a0826);
   color: #fff;
   line-height: 1.6;
-  padding: 0 20px;
 }
 
-section {
-  max-width: 900px;
-  margin: 80px auto;
-  text-align: center;
-}
-
-/* NAVBAR */
 nav ul {
   display: flex;
   justify-content: center;
   list-style: none;
-  gap: 40px;
   padding: 20px 0;
+  gap: 40px;
   border-bottom: 1px solid #999;
 }
 
@@ -36,23 +27,31 @@ nav a {
   font-weight: bold;
 }
 
-/* INTRO */
 .intro {
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  gap: 30px;
-  margin-top: 60px;
+  flex-wrap: wrap;
+  gap: 40px;
+  padding: 60px 20px;
+}
+
+.intro-text {
+  text-align: center;
 }
 
 .intro-text h2 {
   font-size: 1.5rem;
+  margin-bottom: 10px;
 }
 
 .intro-text h1 {
-  font-size: 3rem;
+  font-size: 2.5rem;
   font-weight: bold;
+}
+
+.intro-photo {
+  text-align: center;
 }
 
 .intro-photo img {
@@ -61,32 +60,37 @@ nav a {
   border-radius: 10px;
 }
 
-/* A PROPOS */
+#a-propos {
+  text-align: center;
+  padding: 100px 20px 60px;
+  max-width: 900px;
+  margin: auto;
+}
+
 .italic {
   font-style: italic;
   margin-top: 15px;
 }
 
-/* COMPÉTENCES */
 .grid {
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
-  gap: 30px;
-  margin-top: 60px;
+  flex-wrap: wrap;
+  padding: 60px 20px;
+  gap: 40px;
 }
 
-.grid div {
-  width: 250px;
+h3 {
+  margin-bottom: 20px;
+  text-align: center;
 }
 
 .skills {
   display: flex;
   justify-content: center;
-  gap: 30px;
   flex-wrap: wrap;
+  gap: 20px;
   list-style: none;
-  margin-top: 20px;
   padding: 0;
 }
 
@@ -102,24 +106,35 @@ nav a {
   transform: scale(1.1);
 }
 
-/* FORMATION / OBJECTIF */
-ul {
-  padding-left: 0;
+#formation, #objectif {
+  padding: 60px 20px;
+  text-align: center;
+  max-width: 800px;
+  margin: auto;
+}
+
+.formation-list {
   list-style: none;
+  padding: 0;
+  font-size: 18px;
+  line-height: 1.8;
 }
 
-ul li {
+.formation-list li {
   margin-bottom: 10px;
-  line-height: 1.5;
 }
 
-/* CONTACT */
 #contact {
   background-color: rgba(255, 255, 255, 0.05);
   padding: 40px;
-  border-radius: 8px;
   max-width: 600px;
   margin: 60px auto;
+  border-radius: 8px;
+}
+
+#contact h3 {
+  margin-bottom: 20px;
+  text-align: center;
 }
 
 form {
@@ -147,7 +162,6 @@ input[type="submit"]:hover {
   background-color: #8543c0;
 }
 
-/* FOOTER */
 footer {
   text-align: center;
   font-size: 0.8rem;
